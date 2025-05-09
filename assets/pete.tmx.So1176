@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="80" height="30" tilewidth="16" tileheight="16" nextobjectid="94">
+ <tileset firstgid="1" source="floor.tsx"/>
+ <tileset firstgid="19" name="acorn" tilewidth="16" tileheight="16" tilecount="1" columns="1">
+  <image source="acorn.png" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="20" name="bat" tilewidth="16" tileheight="16" tilecount="4" columns="4">
+  <image source="bat.png" width="64" height="16"/>
+  <tile id="1">
+   <animation>
+    <frame tileid="1" duration="100"/>
+    <frame tileid="2" duration="100"/>
+    <frame tileid="3" duration="100"/>
+    <frame tileid="0" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="24" name="vines" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="vines.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="25" name="ground" tilewidth="16" tileheight="16" tilecount="18" columns="6">
+  <image source="ground.png" width="96" height="48"/>
+ </tileset>
+ <tileset firstgid="43" name="spikes" tilewidth="32" tileheight="16" tilecount="1" columns="1">
+  <image source="spikes.png" width="32" height="16"/>
+ </tileset>
+ <tileset firstgid="44" name="mist" tilewidth="40" tileheight="32" tilecount="1" columns="1">
+  <image source="mist.png" width="40" height="32"/>
+ </tileset>
+ <layer name="Capa de Patrones 1" width="80" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztleEKgzAQg3Vzc3Nzc3v/h13+CFIu61XxCpIPgtBeerU0tGmEEEIIIYQQQgghhBBCCJHSQldn3Qk6Qx10cfqOTg89nXU36A4N0MPpOzoj9HXWvaA3NEEfp28N3kzU7Feax8j8ejNRs19pHiPz681EzX6leYzIb/Qbtaaf5fGsEfFv0W9UZL+IXpFvVHS/vXqtyUNLatk66bcjczk/299W33L8X/atc7Hude6e96SWrZN+BzKX87P9bfUtx61Mz2dknYt1r3P3fCS1bJ30O5G5nJ/tb6tvOW5lej4j61x+smAMtw==
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="80" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztzskJwDAUQ0F3ktXZ+i8wKsB382EGHrqqNQAAAAAAAACgmiWtaRvsno50zrlWQk9Xugf7pDd9094Blfy5uwLT
+  </data>
+ </layer>
+ <objectgroup name="Collectables">
+  <properties>
+   <property name="golden" value=""/>
+  </properties>
+  <object id="1" gid="19" x="241" y="415" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2" gid="19" x="258" y="428" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="3" gid="19" x="281" y="417" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="4" gid="19" x="299" y="430" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5" gid="19" x="337" y="417" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="6" gid="19" x="369" y="429" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="43" name="GOLDEN" type="golden" gid="19" x="534" y="323" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="87" name="RED" type="red" gid="19" x="88.6667" y="328.333" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="88" name="RED" type="red" gid="19" x="838" y="429" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="89" name="RED" type="red" gid="19" x="812.667" y="429.667" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="90" name="RED" type="red" gid="19" x="767.333" y="426" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="91" name="RED" type="red" gid="19" x="788.667" y="425.333" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="92" name="RED" type="red" gid="19" x="742" y="424.667" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="93" name="RED" type="red" gid="19" x="714.667" y="426.667" width="16" height="16">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Enemies" visible="0">
+  <properties>
+   <property name="type" type="int" value="10"/>
+  </properties>
+  <object id="7" gid="21" x="239" y="426" width="16" height="16">
+   <properties>
+    <property name="direction" type="int" value="0"/>
+    <property name="speed" type="float" value="3"/>
+    <property name="type" type="int" value="0"/>
+    <property name="wander" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="27" gid="21" x="389" y="303" width="16" height="16">
+   <properties>
+    <property name="direction" type="int" value="0"/>
+    <property name="speed" type="float" value="3"/>
+    <property name="type" type="int" value="0"/>
+    <property name="wander" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="28" gid="21" x="439" y="423" width="16" height="16">
+   <properties>
+    <property name="direction" type="int" value="0"/>
+    <property name="speed" type="float" value="3"/>
+    <property name="type" type="int" value="0"/>
+    <property name="wander" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="29" gid="21" x="145" y="286" width="16" height="16">
+   <properties>
+    <property name="direction" type="int" value="0"/>
+    <property name="speed" type="float" value="10"/>
+    <property name="type" type="int" value="0"/>
+    <property name="wander" type="float" value="15"/>
+   </properties>
+  </object>
+  <object id="30" gid="21" x="242" y="290" width="16" height="16">
+   <properties>
+    <property name="direction" type="int" value="0"/>
+    <property name="speed" type="float" value="50"/>
+    <property name="type" type="int" value="0"/>
+    <property name="wander" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="54" gid="43" x="1037" y="432" width="32" height="16">
+   <properties>
+    <property name="type" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="55" gid="43" x="1068.25" y="432" width="32" height="16">
+   <properties>
+    <property name="type" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="56" gid="43" x="111" y="384.667" width="32" height="16">
+   <properties>
+    <property name="type" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="75" gid="21" x="176.333" y="432" width="16" height="16">
+   <properties>
+    <property name="direction" type="int" value="1"/>
+    <property name="speed" type="float" value="1"/>
+    <property name="type" type="int" value="0"/>
+    <property name="wander" type="float" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Threats" visible="0">
+  <object id="34" gid="24" x="362" y="432" width="32" height="32">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="35" gid="24" x="383" y="432" width="32" height="32">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="36" gid="24" x="403" y="433" width="32" height="32">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="38" gid="24" x="423" y="430" width="32" height="32">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="39" gid="24" x="444" y="431" width="32" height="32">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="40" gid="24" x="341" y="433" width="32" height="32">
+   <properties>
+    <property name="type" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="70" gid="44" x="601.333" y="412.667" width="40" height="32">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="83" gid="44" x="591.333" y="433.333" width="40" height="32">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="84" gid="44" x="629.333" y="433.333" width="40" height="32">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="85" gid="44" x="664" y="434.667" width="40" height="32">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="86" gid="44" x="644.667" y="416" width="40" height="32">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" source="floor.tsx"/>
+ <tileset firstgid="19" name="acorn" tilewidth="16" tileheight="16" tilecount="1" columns="1">
+  <image source="acorn.png" width="16" height="16"/>
+ </tileset>
+ <layer name="Capa de Patrones 1" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztkdsOgzAMQ8OAcdlgXP7/X3GfkCqngm6V9uAjWVEwVSLHTAghhBBCCCGERwU9/3heB70L7fKLeRO0Fdrlm3kh5wdUQw3UWtk7350Xcu6hARqhl525786b+Lv33915jJDzDH2gBVqN5852yNnzyjyWcarP8eLaOB67Ncs41ed4cR0dj92aZZzqc7y4Lo7Hbn0AeD8GhQ==
+  </data>
+ </layer>
+ <objectgroup name="Collectables"/>
+</map>

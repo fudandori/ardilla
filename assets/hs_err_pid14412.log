@@ -1,0 +1,153 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=14412, tid=0x0000000000000a10
+#
+# JRE version:  (8.0_131-b11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.131-b11 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000005082800):  JavaThread "Unknown thread" [_thread_in_vm, id=2576, stack(0x0000000004f40000,0x0000000005040000)]
+
+Stack: [0x0000000004f40000,0x0000000005040000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000005082800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2576, stack(0x0000000004f40000,0x0000000005040000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 18944K, used 327K [0x00000000ead80000, 0x00000000ec280000, 0x0000000100000000)
+  eden space 16384K, 2% used [0x00000000ead80000,0x00000000eadd1ec8,0x00000000ebd80000)
+  from space 2560K, 0% used [0x00000000ec000000,0x00000000ec000000,0x00000000ec280000)
+  to   space 2560K, 0% used [0x00000000ebd80000,0x00000000ebd80000,0x00000000ec000000)
+ ParOldGen       total 44032K, used 0K [0x00000000c0800000, 0x00000000c3300000, 0x00000000ead80000)
+  object space 44032K, 0% used [0x00000000c0800000,0x00000000c0800000,0x00000000c3300000)
+ Metaspace       used 770K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 75K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000014540000,0x0000000014740000] byte_map_base: 0x0000000013f3c000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000065bfc720
+ Begin Bits: [0x0000000014ca0000, 0x0000000015c80000)
+ End Bits:   [0x0000000015c80000, 0x0000000016c60000)
+
+Polling page: 0x0000000005040000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000005180000, 0x00000000053f0000, 0x0000000014180000]
+ total_blobs=58 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.030 loading class java/lang/Short
+Event: 0.030 loading class java/lang/Short done
+Event: 0.030 loading class java/lang/Integer
+Event: 0.030 loading class java/lang/Integer done
+Event: 0.030 loading class java/lang/Long
+Event: 0.030 loading class java/lang/Long done
+Event: 0.031 loading class java/lang/NullPointerException
+Event: 0.031 loading class java/lang/NullPointerException done
+Event: 0.031 loading class java/lang/ArithmeticException
+Event: 0.031 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff7d0430000 - 0x00007ff7d0467000 	C:\Program Files\Java\jdk1.8.0_131\bin\java.exe
+0x00007ff8960a0000 - 0x00007ff896280000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff893570000 - 0x00007ff89361e000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff893300000 - 0x00007ff893566000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff8956e0000 - 0x00007ff895781000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff895640000 - 0x00007ff8956dd000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff893990000 - 0x00007ff8939eb000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff8940e0000 - 0x00007ff8941ff000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff893690000 - 0x00007ff89381f000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff892c40000 - 0x00007ff892c60000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff8957f0000 - 0x00007ff895818000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff892f80000 - 0x00007ff893113000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff892c60000 - 0x00007ff892cfb000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff893180000 - 0x00007ff893276000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff87ea10000 - 0x00007ff87ec79000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.16299.192_none_15c8cdae9364c23b\COMCTL32.dll
+0x00007ff893d20000 - 0x00007ff894028000 	C:\WINDOWS\System32\combase.dll
+0x00007ff893280000 - 0x00007ff8932f2000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff8940b0000 - 0x00007ff8940dd000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000065300000 - 0x00000000653d2000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\msvcr100.dll
+0x00000000653e0000 - 0x0000000065c7c000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\server\jvm.dll
+0x00007ff893910000 - 0x00007ff893918000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff883680000 - 0x00007ff883689000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff8939f0000 - 0x00007ff893a5c000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff88f0c0000 - 0x00007ff88f0e3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff88a3c0000 - 0x00007ff88a3ca000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff88f060000 - 0x00007ff88f08a000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x00007ff892bf0000 - 0x00007ff892c3a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00000000652b0000 - 0x00000000652bf000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\verify.dll
+0x0000000065280000 - 0x00000000652a9000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.dll
+0x0000000065260000 - 0x0000000065276000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=windows-1252 -Duser.country=GB -Duser.language=en -Duser.variant 
+java_command: com.mygdx.game.desktop.DesktopLauncher
+java_class_path (initial): D:\Dropbox\LibGDX Projects\Ardilla\desktop\build\classes\main;D:\Dropbox\LibGDX Projects\Ardilla\desktop\build\resources\main;D:\Dropbox\LibGDX Projects\Ardilla\core\build\libs\core-1.0.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-lwjgl\1.9.6\ee7c23636ee4a942d329579daecc3ec5e517fe4c\gdx-backend-lwjgl-1.9.6.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-platform\1.9.6\6f84dd7a18dc68e4ec492dfbb0594f930babcf63\gdx-platform-1.9.6-natives-desktop.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d-platform\1.9.6\d7b6168f5afd3948fd126c0b248f66c49b73ca35\gdx-box2d-platform-1.9.6-natives-desktop.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-tools\1.9.6\c666f1f58fcd461a023529991f463f3a9e3c5fec\gdx-tools-1.9.6.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-freetype-platform\1.9.6\4c24b0349ba9756a29e84a77dcb2f17e47bbcef3\gdx-freetype-platform-1.9.6-natives-desktop.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.6\47d1e9b890e364ec28f128e9bb3b9a12a94c164\gdx-1.9.6.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.6\c249ef4060a4fada952f278455c8f7b9cba3c18a\gdx-box2d-1.9.6.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-freetype\1.9.6\69187cc3c8062f191df435b43671b0e5ffcbf353\gdx-freetype-1.9.6.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl\2.9.2\a9d80fe5935c7a9149f6584d9777cfd471f65489\lwjgl-2.9.2.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl_util\2.9.2\4b9e37300a87799856e0bd15ed81663cdb6b0947\lwjgl_util-2.9.2.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\com.badlogicgames.jlayer\jlayer\1.0.1-gdx\7cca83cec5c1b2f011362f4d85aabd71a73b049d\jlayer-1.0.1-gdx.jar;C:\Users\Fudan\.gradle\caches\modules-2\files-2.1\
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Fudan\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\Fudan\AppData\Local\Microsoft\WindowsApps;C:\Users\Fudan\AppData\Local\atom\bin;C:\adb;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Users\Fudan\AppData\Local\Microsoft\WindowsApps;C:\Users\Fudan\AppData\Local\atom\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+USERNAME=Fudan
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 16299 (10.0.16299.15)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, clmul, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 4155228k(528640k free), swap 10260600k(20112k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.131-b11) for windows-amd64 JRE (1.8.0_131-b11), built on Mar 15 2017 01:23:53 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Feb 03 17:44:01 2018
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
